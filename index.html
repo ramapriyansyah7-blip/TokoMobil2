@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoZone - Portal Mobil Modern</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        /* Hero Section Premium */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(26,26,26,0.9) 0%, rgba(44,44,44,0.8) 100%), 
+                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 140px 0;
+            color: #ffffff;
+        }
+        /* Custom Card Styling */
+        .car-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: #fff;
+        }
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+        }
+        .car-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+        .car-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .car-card:hover img {
+            transform: scale(1.08);
+        }
+        .badge-type {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #dc3545;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        /* Feature Highlight Counter */
+        .feature-box {
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            border-bottom: 4px solid #0d6efd;
+            height: 100%;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="#"><i class="fa-solid fa-gauge-high me-2"></i>OTO<span class="text-white">ZONE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fitur">Fitur Utama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kalkulator">Simulasi Kredit</a></li>
+                </ul>
+                <a href="#katalog" class="btn btn-outline-danger ms-lg-3 rounded-pill">Cari Mobil</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-section d-flex align-items-center">
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-7 animate__animated animate__fadeInLeft">
+                    <h1 class="display-3 fw-bold mb-3 text-white">Temukan Performa & <span class="text-danger">Kenyamanan</span> Sejati</h1>
+                    <p class="lead text-white-50 mb-4">Jelajahi ekosistem digital otomotif terbaik dengan ragam pilihan mobil masa kini, transparansi harga, dan kalkulator finansial pintar.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#katalog" class="btn btn-danger btn-lg px-4 rounded-pill shadow-lg">Jelajahi Katalog</a>
+                        <a href="#kalkulator" class="btn btn-outline-light btn-lg px-4 rounded-pill">Simulasi Kredit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitur" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Mengapa Memilih <span class="text-danger">OtoZone</span>?</h2>
+                <p class="text-muted">Layanan ekosistem digital otomotif terlengkap untuk kemudahan Anda.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon"><i class="fa-solid fa-car-side"></i></div>
+                        <h4 class="fw-bold">Pilihan Terakreditasi</h4>
+                        <p class="text-muted mb-0">Setiap unit kendaraan telah melalui inspeksi ketat 150+ titik kelayakan mesin dan interior.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <h4 class="fw-bold">Komparasi Akurat</h4>
+                        <p class="text-muted mb-0">Bandingkan spesifikasi teknis, konsumsi bahan bakar, hingga fitur keamanan secara real-time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h4 class="fw-bold">Proses Transparan</h4>
+                        <p class="text-muted mb-0">Tidak ada biaya tersembunyi. Semua kalkulasi kredit dan harga on-the-road disajikan terbuka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="katalog" class="py-5">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5">
+                <div>
+                    <h2 class="fw-bold m-0">Katalog Mobil <span class="text-danger">Unggulan</span></h2>
+                    <p class="text-muted m-0">Rekomendasi unit terbaik khusus untuk mobilitas tinggi Anda.</p>
+                </div>
+                <div class="mt-3 mt-md-0">
+                    <button class="btn btn-dark active rounded-pill me-2">Semua</button>
+                    <button class="btn btn-outline-dark rounded-pill me-2">Listrik (EV)</button>
+                    <button class="btn btn-outline-dark rounded-pill">Premium SUV</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card car-card">
+                        <div class="car-img-wrapper">
+                            <span class="badge-type">Electric Vehicle</span>
+                            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="Mobil Listrik X">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold card-title">CyberVolt Sedan X</h5>
+                            <p class="text-muted small mb-3"><i class="fa-solid fa-charging-station text-success me-2"></i>Jangkauan Baterai: ~450 KM</p>
+                            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Harga Mulai</span>
+                                    <span class="fw-bold text-primary fs-5">Rp 520.000.000</span>
+                                </div>
+                                <button class="btn btn-sm btn-danger rounded-circle px-2 py-2" onclick="isiKalkulator(520000000)" title="Hitung Kredit"><i class="fa-solid fa-calculator mx-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card car-card">
+                        <div class="car-img-wrapper">
+                            <span class="badge-type bg-dark">Turbo SUV</span>
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="SUV Tangguh Y">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold card-title">TerraX Explorer Y</h5>
+                            <p class="text-muted small mb-3"><i class="fa-solid fa-gears text-danger me-2"></i>Mesin: 2000cc Twin-Turbo</p>
+                            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Harga Mulai</span>
+                                    <span class="fw-bold text-primary fs-5">Rp 475.000.000</span>
+                                </div>
+                                <button class="btn btn-sm btn-danger rounded-circle px-2 py-2" onclick="isiKalkulator(475000000)" title="Hitung Kredit"><i class="fa-solid fa-calculator mx-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card car-card">
+                        <div class="car-img-wrapper">
+                            <span class="badge-type bg-primary">Sport</span>
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Sedan Sport Z">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold card-title">Apex GT Coupe Z</h5>
+                            <p class="text-muted small mb-3"><i class="fa-solid fa-bolt text-warning me-2"></i>Akselerasi: 0-100 km/j (3.8s)</p>
+                            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                                <div>
+                                    <span class="text-muted d-block small">Harga Mulai</span>
+                                    <span class="fw-bold text-primary fs-5">Rp 840.000.000</span>
+                                </div>
+                                <button class="btn btn-sm btn-danger rounded-circle px-2 py-2" onclick="isiKalkulator(840000000)" title="Hitung Kredit"><i class="fa-solid fa-calculator mx-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kalkulator" class="py-5 bg-white border-top">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">Simulasi Kredit <span class="text-danger">Pintar</span></h2>
+                    <p class="text-muted">Rencanakan keuangan Anda secara instan. Masukkan harga mobil atau klik ikon kalkulator (<i class="fa-solid fa-calculator text-danger"></i>) pada kartu produk di atas untuk mengisi harga secara otomatis.</p>
+                    <div class="p-4 bg-light rounded-4 border">
+                        <h5 class="fw-bold mb-3 text-secondary"><i class="fa-solid fa-circle-info me-2"></i>Asumsi Perhitungan</h5>
+                        <ul class="small text-muted ps-3 mb-0">
+                            <li>Uang muka minimal sebesar 20% dari harga kendaraan.</li>
+                            <li>Suku bunga flat berkala (ilustrasi kisaran 5% per tahun).</li>
+                            <li>Belum termasuk biaya asuransi & administrasi wilayah.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card p-4 shadow-sm border-0 bg-light rounded-4">
+                        <form id="loanForm" onsubmit="hitungCicilan(event)">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <label class="form-label fw-semibold">Harga Mobil (Rp)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-dark text-white">Rp</span>
+                                        <input type="number" id="carPrice" class="form-control form-control-lg" value="520000000" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Uang Muka / DP (Rp)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-secondary text-white">Rp</span>
+                                        <input type="number" id="downPayment" class="form-control form-control-lg" value="104000000" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Tenor (Jangka Waktu)</label>
+                                    <select id="tenure" class="form-select form-select-lg">
+                                        <option value="12">12 Bulan (1 Tahun)</option>
+                                        <option value="24">24 Bulan (2 Tahun)</option>
+                                        <option value="36" selected>36 Bulan (3 Tahun)</option>
+                                        <option value="48">48 Bulan (4 Tahun)</option>
+                                        <option value="60">60 Bulan (5 Tahun)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-dark btn-lg w-100 rounded-pill"><i class="fa-solid fa-calculator me-2"></i>Hitung Estimasi Cicilan</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="resultBox" class="mt-4 p-4 bg-danger-subtle text-danger-emphasis rounded-3 d-none animate__animated animate__fadeIn">
+                            <div class="row text-center">
+                                <div class="col-md-6 border-end border-danger-subtle">
+                                    <span class="small d-block text-uppercase fw-semibold">Pokok Utang</span>
+                                    <h4 class="fw-bold m-0" id="txtPrincipal">Rp 0</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="small d-block text-uppercase fw-semibold">Angsuran / Bulan</span>
+                                    <h3 class="fw-bold text-danger m-0" id="txtInstallment">Rp 0</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white-50 py-5">
+        <div class="container text-center">
+            <p class="mb-2 text-white fw-bold">OTOZONE PORTAL DIGITAL</p>
+            <p class="small mb-4">Aplikasi Katalog Mobil & Interaktif Finansial - Bootstrap 5 & Vanilla JS Edition</p>
+            <div class="d-flex justify-content-center gap-3 mb-4 fs-5">
+                <a href="#" class="text-white-50"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white-50"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white-50"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <hr class="border-secondary">
+            <p class="small m-0">&copy; 2026 OtoZone. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Fungsi pembantu otomatis untuk memasukkan harga dari tombol kartu produk
+        function isiKalkulator(harga) {
+            document.getElementById('carPrice').value = harga;
+            // Hitung otomatis DP minimal 20%
+            document.getElementById('downPayment').value = Math.round(harga * 0.2);
+            
+            // Gulir otomatis ke element kalkulator secara smooth
+            document.getElementById('kalkulator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Fungsi utama menghitung simulasi kredit mobil
+        function hitungCicilan(event) {
+            event.preventDefault();
+
+            const price = parseFloat(document.getElementById('carPrice').value);
+            const dp = parseFloat(document.getElementById('downPayment').value);
+            const tenure = parseInt(document.getElementById('tenure').value);
+
+            if (dp >= price) {
+                alert("Uang muka (DP) tidak boleh melebihi atau sama dengan harga total mobil!");
+                return;
+            }
+
+            // Perhitungan Dasar Kredit (Bunga Flat Berjenjang 5% per tahun)
+            const principal = price - dp;
+            const interestRatePerYear = 0.05; 
+            const totalYears = tenure / 12;
+            const totalInterest = principal * interestRatePerYear * totalYears;
+            const totalLoan = principal + totalInterest;
+            const monthlyInstallment = totalLoan / tenure;
+
+            // Memformat angka ke format mata uang Rupiah (IDR)
+            const formatter = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            });
+
+            // Tampilkan data ke elemen interface
+            document.getElementById('txtPrincipal').innerText = formatter.format(principal);
+            document.getElementById('txtInstallment').innerText = formatter.format(monthlyInstallment);
+
+            // Munculkan kotak hasil dengan efek animasi bawaan bootstrap/css
+            const resultBox = document.getElementById('resultBox');
+            resultBox.classList.remove('d-none');
+        }
+    </script>
+</body>
+</html>
